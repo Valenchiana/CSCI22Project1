@@ -1,0 +1,547 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;700&family=Roboto&display=swap');
+
+body{
+    margin: 0 ;
+    background-color: #125B50;
+}
+#edibles-sad-logo-white {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 200px;
+    margin-bottom: -50px;
+}
+
+#confirmdelete > h1 {
+    text-align: center;
+}
+
+input {
+    width: 30%;
+    padding: 5px;
+}
+
+input [type=text]:focus {
+    border: 3px solid #555;
+}
+
+textarea {
+    padding: 5px;
+    width: 30.5%;
+    resize: none;
+    font-family: 'Open-Sans', sans-serif;
+}
+
+#headings {
+    margin-left: 175px;
+}
+
+#editcustomerfield {
+    font-family: 'Open Sans', sans-serif;
+    padding: 15px;
+    border-radius:10px;
+    background-color:white;
+    border-bottom: solid black 1px;
+    margin: 20px 300px;
+    display: grid;
+    row-gap: 1px;
+}
+
+#editfoodfield {
+    font-family: 'Open Sans', sans-serif;
+    padding: 15px;
+    border-radius:10px;
+    background-color:white;
+    border-bottom: solid black 1px;
+    margin: 20px 300px;
+    display: grid;
+    row-gap: 1px;
+}
+
+#addorderfield {
+    display: grid;
+    row-gap: 1px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "customer customer"
+    "foodheading qtyheading"
+    "foodlist qty"
+    "button button";
+}
+
+#editorderfield {
+    display: grid;
+    row-gap: 1px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "customer customer"
+    "foodheading qtyheading"
+    "foodlist qty"
+    "button button";
+}
+
+#addorderfield > h3 {
+    padding-top: 15px;
+    text-align: left;
+}
+
+#editorderfield > h3 {
+    padding-top: 15px;
+    text-align: left;
+}
+
+#foodlist > p {
+    margin: 13px;
+}
+
+#qty > input {
+    margin-bottom: 5px;
+    margin-left: 35px;
+    display: block;
+    width: 15px;
+    text-align: center;
+}
+
+#qty {
+    margin-top: 10px;
+}
+
+/* FOR ALL BUTTONS */
+
+h1 {
+    margin-top:80px;
+    font-family: 'Open-Sans', sans-serif;
+    color:white;    
+    margin-left:126px;
+    margin-right:126px;
+    font-weight:200;
+}
+
+h2 {
+    margin:0;
+    font-family:'Open-Sans', sans-serif;
+    color:white;
+    margin-left:126px;
+    margin-right:126px;
+    font-weight:100;
+}
+
+h3 {
+    margin:0;
+    font-family:'Open-Sans', sans-serif;
+    color:#104d44;
+    font-size: 24px;
+    font-weight:bold;
+    text-align:center;
+}
+.largeicon {
+    height: 100px;
+    width: 100px;
+}
+
+.buttonset {
+    display:flex;
+    gap: 10px;
+    justify-content:center;
+    align-items:center;
+}
+
+.button {
+    text-align:center;
+    min-width: 120px auto;
+    max-width: 150px;
+    border-radius: 10px;
+    /* background-color:#FFFFFF; */
+    padding: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.button > a {
+    text-decoration:none;
+    font-family: 'Open Sans', sans-serif;
+    font-weight:bold;
+    font-size: 13px;
+}
+
+#addbutton {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin-bottom:75px;
+}
+
+#addbutton > .button {
+    background-color: #F8CD00;
+}
+
+#addbutton > div > a {
+    color: white;
+}
+#addfoodbutton {
+    display:flex;
+    justify-content:left;
+    align-items:left;
+    margin-top: 15px;
+    margin-bottom:20px;
+}
+
+#addfoodbutton > .button {
+    background-color: #F8CD00;
+}
+
+#addfoodbutton > div > a {
+    color: white;
+}
+
+#addorderbutton {
+    grid-column: 1/3;
+    width: 100%;
+    margin: 20px 0;
+    margin-left: 50px;
+}
+
+#editorderfield > .buttonset {
+    grid-column: 1/3;
+    width: 100%;
+    margin: 20px 0;
+    margin-left: -50px;
+}
+
+#addorderbutton > .button {
+    background-color: #F8CD00;
+}
+
+#addorderbutton > .button > a {
+    text-decoration:none;
+    font-family: 'Open Sans', sans-serif;
+    font-weight:bold;
+    font-size: 13px;
+    color: white;
+}
+
+#edit{
+    background-color:#104d44;
+}
+
+#edit > a{
+    color:white;
+}
+
+#view{
+    background-color: #FAF5E4;
+}
+
+#view > a{
+    color:#104d44;
+}
+
+#delete{
+    background-color: #FF6363;
+}
+
+#delete > a{
+    color:white;
+}
+
+#cancel {
+    background-color: white;
+}
+
+#cancel > a {
+    color: #125B50;
+}
+
+#save {
+    background-color: #125B50;
+}
+
+#save > a {
+    color: white;
+}
+
+#canceledit {
+    background-color: #FF6363;
+}
+
+#canceledit > a {
+    color: white;
+}
+
+#confirmdelete > .buttonset {
+    margin-top: 30px;
+    margin-bottom: 320px;
+}
+
+#addcustomerfield > #addbutton {
+    justify-content:left;
+    align-items:left;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+#editcustomerfield > .buttonset {
+    justify-content: left;
+    align-items: left;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+#editfoodfield > .buttonset {
+    justify-content: left;
+    align-items: left;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+/* FOR LIST TYPE PAGES!(e.g. customers.html) */
+
+.entries > p {
+    align-items:center;
+    padding:25px;
+    margin:0;
+    gap: 10px;
+    display:inline-block;
+    min-width: 200px;
+    max-width: 300px;
+    font-family:'Open-Sans',sans-serif;
+}
+
+#mlist {
+    row-gap:5px;
+    padding: 15px;
+    border-radius:10px;
+    background-color:white;
+    border-bottom: solid black 1px;
+    margin: 20px 126px;
+    display:grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 68px 68px 68px 68px ;
+    grid-template-areas:
+    "entry1 entry1butt"
+    "entry2 entry2butt"
+    "entry3 entry3butt"
+    "entry4 entry4butt"
+}
+
+#addcustomerfield {
+    font-family: 'Open Sans', sans-serif;
+    padding: 15px;
+    border-radius:10px;
+    background-color:white;
+    border-bottom: solid black 1px;
+    margin: 20px 300px;
+    display: grid;
+    row-gap: 1px;
+}
+
+#addfoodfield {
+    font-family: 'Open Sans', sans-serif;
+    padding: 15px;
+    border-radius:10px;
+    background-color:white;
+    border-bottom: solid black 1px;
+    margin: 20px 300px;
+    display: grid;
+    row-gap: 1px;
+}
+
+#addorderfield {
+    font-family: 'Open Sans', sans-serif;
+    padding: 15px 0;
+    padding-right: 500px;
+    padding-left: 15px;
+    border-radius:10px;
+    background-color:white;
+    border-bottom: solid black 1px;
+    margin: 20px 300px;
+    display: grid;
+    row-gap: 1px;
+}
+
+#editorderfield {
+    font-family: 'Open Sans', sans-serif;
+    padding: 15px 0;
+    padding-right: 500px;
+    padding-left: 15px;
+    border-radius:10px;
+    background-color:white;
+    border-bottom: solid black 1px;
+    margin: 20px 300px;
+    display: grid;
+    row-gap: 1px;
+}
+#customerdrop {
+    grid-area: customer;
+}
+
+#addorderfield > #foodheading {
+    grid-area: foodheading;
+}
+
+#addorderfield > #qtyheading {
+    grid-area: qtyheading;
+}
+
+#addorderfield > #foodlist {
+    grid-area: foodlist;
+}
+
+#addorderfield > #qty {
+    grid-area: qty;
+}
+
+#editorderfield > #foodheading {
+    grid-area: foodheading;
+}
+
+#editorderfield > #qtyheading {
+    grid-area: qtyheading;
+}
+
+#editorderfield > #foodlist {
+    grid-area: foodlist;
+}
+
+#editorderfield > #qty {
+    grid-area: qty;
+}
+
+/* FOR VIEW TYPE PAGES (e.g. customer1.html) */
+
+#mlistview {
+    row-gap:5px;
+    padding: 45px;
+    border-radius:10px;
+    background-color:white;
+    filter: drop-shadow(0 0 0.025rem black);
+    margin: 20px 126px;
+    display:grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-rows: 0.5fr 1fr 1fr 68px ;
+    grid-template-areas:
+    "entry1a entry1b entry1c"
+    "entry2a entry2b entry2c"
+    "entry3a entry3b entry3c"
+    "entry4a entry4b entry4c"
+    "entry5a entry5b entry5c"
+ 
+}
+
+.orderitems{
+    grid-area: 1/2/2/4;
+}
+
+#mlistview > .buttonset {
+    /* grid-area:entry4; */
+    grid-area: 5/1/6/4;
+}
+
+.entrya {
+    grid-area:entry2a;
+    
+}
+
+.entry3a {
+    grid-area:entry3a;
+}
+
+.entry3b {
+    grid-area:entry3b;
+}
+
+.entry3c {
+    grid-area:entry3c;
+}
+
+
+#content {
+    font-family:'Open-Sans',sans-serif;
+
+}
+
+.entrybc {
+    list-style-type:none;
+}
+
+/* FOR THE NAV BAR */
+
+.icon {
+    height: 40px;
+    width: 40px;
+}
+
+#edibles-logo-white {
+    display: block;
+    float:left;
+    padding: 0.9em 0.8em;
+    background-color: #125B50;
+}
+
+nav {
+    margin:0;
+    background-color: #125B50;
+    padding-left:126px;
+    padding-right:126px;
+    border-bottom: 2px solid #FFFFFF;
+}
+
+nav > ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+
+}
+
+nav > ul > li {
+    float: right;
+    padding: 1.6em 1.5em;
+}
+
+nav > ul > li > a {
+    font-family:sans-serif;
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+
+nav > ul > li:hover {
+    background-color: #104d44;
+    color: white;
+  }
+
+/* FOOTER */
+
+footer {
+    height: 100%;
+    margin:0;
+    background-color:white;
+    padding:1.25em;
+    font-family:sans-serif;
+}
+
+footer > ul {
+    gap: 25px;
+    background-color:white;
+    list-style-type: none;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+footer > ul > li > a {
+    text-decoration:none;
+    color:#125B50;
+    font-size:13px;
+    font-weight:bold;
+}
+
+footer > p {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size: 10px;
+    font-family:sans-serif;
+}

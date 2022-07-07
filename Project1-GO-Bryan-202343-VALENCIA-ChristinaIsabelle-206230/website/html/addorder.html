@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <title> Orders </title>
+        <link rel="icon" href="../images/ediblesIcon.png">
+        <link rel="stylesheet" type="text/css" href="../css/styles2.css">
+    </head>
+    <body>
+        <nav>
+            <ul>
+                <img src="../images/ediblesIconWhite.png" id = "edibles-logo-white" class = "icon">
+                <img src="../images/edibles LOGO white.png" id = "edibles-logo-white">
+                <li><a href="signin.html"> Sign Out </a></li>
+                <li><a href="customers.html"> Customers </a></li>
+                <li><a href="orders.html"> Orders </a></li>
+                <li><a href="foods.html"> Food </a></li>
+                <li><a href="index.html"> Home </a></li>
+            </ul>
+        </nav>
+        <div id = "headings">
+            <h1> Orders </h1>
+            <h2> Add Order </h2>
+        </div>
+        <div id = "addorderfield">
+            <div class = "dropdown" id ="customerdrop">
+                <label for="customerdrop">Select customer:</label>
+                <select name="customer" id="customerlist">
+                    <option value="juan">Juan Dela Cruz</option>
+                    <option value="bryan">Bryan Go</option>
+                    <option value="china">China Valencia</option>
+                </select>
+            </div>
+            <h3 id="foodheading">Food Item:</h3>
+            <div id ="foodlist">
+                <p>Spaghetti</p>
+                <p>Mango Cake</p>
+                <p>Katsudon</p>
+            </div>
+            <h3 id="qtyheading">Quantity:</h3>
+            <div class = "entry" id ="qty">
+                <input type = "text">
+                <input type = "text">
+                <input type = "text">
+            </div>
+            <div id="addorderbutton">
+                <div class = "button">
+                    <a href= "order1updated.html"> Add Order </a>
+                </div>   
+            </div>
+        </div>
+    <footer>
+        <ul>
+            <li> <a href="#"> Privacy Policy </a></li>
+            <li> <a href="#"> Terms of Use </a></li>
+        </ul>
+        <p> © 2022 All Rights Reserved. Powered by the Minds of Bryan and China </p>
+    </footer>
+    </body>
+</html>
